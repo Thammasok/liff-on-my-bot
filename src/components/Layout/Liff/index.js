@@ -36,7 +36,8 @@ class Index extends Component {
       } else {
         liff.sendMessages([{
           type: 'text',
-          text: "You cannot use this liff."
+          // text: "You cannot use this liff."
+          text: "config: " + config.line_user
         }]).then(() => {
           liff.closeWindow();
         });
