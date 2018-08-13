@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import config from '../../../config'
 
 const liff = window.liff;
 
@@ -25,7 +26,7 @@ class Index extends Component {
     liff.init(async (data) => {
       let profile = await liff.getProfile();
 
-      if(profile.userId === process.env.USER_LINE_REF) {
+      if(profile.userId === config.line_user) {
         this.setState({
           displayName : profile.displayName,
           userId : profile.userId,
