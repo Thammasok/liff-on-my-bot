@@ -5,71 +5,14 @@ import {routes} from '../../routers'
 
 import AppLayout  from './App'
 import FullLayout from './Full'
-
-const liff = window.liff;
+import Liff from './Liff'
 
 class Index extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      displayName : '',
-      userId : '',
-      pictureUrl : '',
-      statusMessage : ''
-    };
-
-    this.initialize = this.initialize.bind(this);
-    this.closeApp = this.closeApp.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('load', this.initialize);
-  }
-
-  initialize() {
-    liff.init(async (data) => {
-      let profile = await liff.getProfile();
-      this.setState({
-        displayName : profile.displayName,
-        userId : profile.userId,
-        pictureUrl : profile.pictureUrl,
-        statusMessage : profile.statusMessage
-      });
-    }); 
-  }
-
-  closeApp(event) {
-    event.preventDefault();
-    liff.sendMessages([{
-      type: 'text',
-      text: "Bye Bye!!!"
-    }]).then(() => {
-      liff.closeWindow();
-    });
-  }
   render() {
     return (
       this.props.layout === 'app' ? (
         <AppLayout>
-          <div className="container">
-            <div className="columns m-t-10">
-              <div className="column col-xs-12">
-                <div className="panel">
-                  <div className="panel-header text-center">
-                    <figure className="avatar avatar-lg">
-                      <img src={this.state.pictureUrl} alt="Avatar" />
-                    </figure>
-                    <div className="panel-title h5 mt-10">{this.state.displayName}</div>
-                    <div className="panel-subtitle">{this.state.statusMessage}</div>
-                  </div>
-                  <div className="panel-footer">
-                    <button className="btn btn-primary btn-block" onClick={this.closeApp}>Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Liff />
 
           <Switch>
             {routes.map((route,index) => (
@@ -80,24 +23,8 @@ class Index extends Component {
         </AppLayout>
       ) : (
         <FullLayout>
-          <div className="container">
-            <div className="columns m-t-10">
-              <div className="column col-xs-12">
-                <div className="panel">
-                  <div className="panel-header text-center">
-                    <figure className="avatar avatar-lg">
-                      <img src={this.state.pictureUrl} alt="Avatar" />
-                    </figure>
-                    <div className="panel-title h5 mt-10">{this.state.displayName}</div>
-                    <div className="panel-subtitle">{this.state.statusMessage}</div>
-                  </div>
-                  <div className="panel-footer">
-                    <button className="btn btn-primary btn-block" onClick={this.closeApp}>Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Liff />
+          
           <Switch>
             {routes.map((route,index) => (
               <Route key={index} path={route.path} component={route.component} exact={route.exact} data={route.pathMatch} />
