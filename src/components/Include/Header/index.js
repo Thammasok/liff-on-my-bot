@@ -16,19 +16,19 @@ class Index extends Component {
               </div>
               <div id="navbarMenu" className="navbar-menu">
                 <div className="navbar-end">
-                  <a className="navbar-item is-active">
+                  <a href="/" className="navbar-item is-active">
                     Home
                   </a>
-                  <a className="navbar-item">
+                  <a href="/" className="navbar-item">
                     My Room
                   </a>
-                  <a className="navbar-item">
+                  <a href="/" className="navbar-item">
                     Finance
                   </a>
-                  <a className="navbar-item">
+                  <a href="/" className="navbar-item">
                     Todo
                   </a>
-                  <a className="navbar-item">
+                  <a href="/" className="navbar-item">
                     Calendar
                   </a>
                 </div>

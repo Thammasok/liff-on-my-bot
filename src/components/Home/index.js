@@ -23,7 +23,7 @@ class Index extends Component {
           <div className="control">
             <div className="tags has-addons">
               <a href="/room?zone=living" className="tag is-light">Living</a>
-              <span className="tag is-success">27 °C</span>
+              <span className="tag is-warning">27 °C</span>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ class Index extends Component {
           <div className="control">
             <div className="tags has-addons">
               <a href="/room?zone=kitchen" className="tag is-light">Kitchen</a>
-              <span className="tag is-success">27 °C</span>
+              <span className="tag is-warning">27 °C</span>
             </div>
           </div>
         </div>
