@@ -19,39 +19,43 @@ class Index extends Component {
   render() {
     return (
       <div className="container">
-        <div class="columns">
-          <div class="column col-6">
+        <div className="columns is-mobile">
+          <div className="column is-6">
             <Card
-              icon="https://image.flaticon.com/icons/svg/1055/1055646.svg"
+              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
               title="Analytics"
+              desc="Show analytical results And summarize the results."
             />
           </div>
-          <div class="column col-6">
+          <div className="column is-6">
             <Card
-              icon="https://image.flaticon.com/icons/svg/1055/1055648.svg"
+              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
               title="My Room"
+              desc="IoT and Control console."
             />
           </div>
         </div>
-        <div class="columns" style={{marginTop: '10px'}}>
-          <div class="column col-6">
+        <div className="columns is-mobile">
+          <div className="column is-6">
             <Card
-              icon="https://image.flaticon.com/icons/svg/1055/1055659.svg"
+              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
               title="Finance"
+              desc="Income, expenditure, financial goals and investment."
             />
           </div>
-          <div class="column col-6">
+          <div className="column is-6">
             <Card
-              icon="https://image.flaticon.com/icons/svg/1055/1055680.svg"
+              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
               title="Todo"
+              desc="What to do today?"
             />
           </div>
         </div>
-        <div class="columns" style={{marginTop: '10px'}}>
-          <div class="column col-6">
+        <div className="columns is-mobile">
+          <div className="column is-6">
           <Card
-            icon="https://image.flaticon.com/icons/svg/1055/1055650.svg"
-            title="Calendar"
+            image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
+            title="Schedule appointments."
           />
           </div>
         </div>

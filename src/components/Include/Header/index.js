@@ -3,23 +3,43 @@ import React, { Component } from 'react'
 class Index extends Component {
   render() {
     return (
-      <header className="navbar">
-        <section className="navbar-section">
-          <a href="/" className="btn btn-block" style={{marginRight: '5px'}}>Back</a>
-          <div className="dropdown">
-            <button className="btn btn-primary dropdown-toggle" tabindex="0">
-              Menu <i class="fas fa-bars"></i>
-            </button>
-            <ul className="menu">
-              <li className="menu-item"><a href="/">Analytics</a></li>
-              <li className="menu-item"><a href="/">My room</a></li>
-              <li className="menu-item"><a href="/">Finance</a></li>
-              <li className="menu-item"><a href="/">Todo</a></li>
-              <li className="menu-item"><a href="/">Calendar</a></li>
-            </ul>
-          </div>
-        </section>
-      </header>
+      <section className="hero is-white">
+        <div className="hero-head">
+          <nav className="navbar">
+            <div className="container">
+              <div className="navbar-brand">
+                <a className="navbar-item">
+                  <img src="/img/logo-emoji.png" alt="Logo" />
+                </a>
+                <span className="navbar-burger burger" data-target="navbarMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenu" className="navbar-menu">
+                <div className="navbar-end">
+                  <a className="navbar-item is-active">
+                    Home
+                  </a>
+                  <a className="navbar-item">
+                    My Room
+                  </a>
+                  <a className="navbar-item">
+                    Finance
+                  </a>
+                  <a className="navbar-item">
+                    Todo
+                  </a>
+                  <a className="navbar-item">
+                    Calendar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
     );
   }
 }
