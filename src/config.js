@@ -1,8 +1,3 @@
-var dotenv = require('dotenv')
-
-dotenv.load()
-
 module.exports = {
-  service_url: 'http://localhost:3300',
-  line_user: process.env.USER_LINE_REF
+  service_url: 'http://localhost:3300'
 }
