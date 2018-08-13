@@ -24,12 +24,22 @@ class Index extends Component {
   initialize() {
     liff.init(async (data) => {
       let profile = await liff.getProfile();
-      this.setState({
-        displayName : profile.displayName,
-        userId : profile.userId,
-        pictureUrl : profile.pictureUrl,
-        statusMessage : profile.statusMessage
-      });
+
+      if(profile.userId === '123') {
+        this.setState({
+          displayName : profile.displayName,
+          userId : profile.userId,
+          pictureUrl : profile.pictureUrl,
+          statusMessage : profile.statusMessage
+        });
+      } else {
+        liff.sendMessages([{
+          type: 'text',
+          text: "You cannot use this liff."
+        }]).then(() => {
+          liff.closeWindow();
+        });
+      }
     }); 
   }
 
@@ -55,7 +65,6 @@ class Index extends Component {
                 </figure>
                 <div className="panel-title h5 mt-10">{this.state.displayName}</div>
                 <div className="panel-subtitle">{this.state.statusMessage}</div>
-                <div className="panel-subtitle">{this.state.userId}</div>
               </div>
               <div className="panel-footer">
                 <button className="btn btn-primary btn-block" onClick={this.closeApp}>Close</button>
