@@ -10,7 +10,7 @@ class Root extends Component {
     return (
       <Provider store={this.props.store}>
         <BrowserRouter>
-          <RootLayout layout="app" />
+          <RootLayout />
         </BrowserRouter>
       </Provider>
     )

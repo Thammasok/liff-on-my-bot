@@ -3,40 +3,23 @@ import React, { Component } from 'react'
 class Index extends Component {
   render() {
     return (
-      <div className="hero-head">
-        <nav className="navbar">
-          <div className="container">
-            <div className="navbar-brand">
-              <a className="navbar-item" href="../">
-                <h1>Project Starter</h1>
-              </a>
-              <span className="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenu" className="navbar-menu">
-              <div className="navbar-end">
-                <div className="tabs is-right">
-                  <ul>
-                    <li><a a href="/">Home</a></li>
-                    <li><a href="/login">Login</a></li>
-                  </ul>
-                  <span className="navbar-item">
-                    <a className="button is-outlined" href="https://github.com/Thammasok/frontend-react">
-                      <span className="icon">
-                        <i className="fa fa-github"></i>
-                      </span>
-                      <span title="Hello from the other side">View Source</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
+      <header className="navbar">
+        <section className="navbar-section">
+          <a href="/" className="btn btn-block" style={{marginRight: '5px'}}>Back</a>
+          <div className="dropdown">
+            <button className="btn btn-primary dropdown-toggle" tabindex="0">
+              Menu <i class="fas fa-bars"></i>
+            </button>
+            <ul className="menu">
+              <li className="menu-item"><a href="/">Analytics</a></li>
+              <li className="menu-item"><a href="/">My room</a></li>
+              <li className="menu-item"><a href="/">Finance</a></li>
+              <li className="menu-item"><a href="/">Todo</a></li>
+              <li className="menu-item"><a href="/">Calendar</a></li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </section>
+      </header>
     );
   }
 }

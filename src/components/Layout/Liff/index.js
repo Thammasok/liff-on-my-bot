@@ -45,12 +45,13 @@ class Index extends Component {
 
   closeApp(event) {
     event.preventDefault();
-    liff.sendMessages([{
-      type: 'text',
-      text: "Bye Bye!!!"
-    }]).then(() => {
-      liff.closeWindow();
-    });
+    liff.closeWindow();
+    // liff.sendMessages([{
+    //   type: 'text',
+    //   text: "Bye Bye!!!"
+    // }]).then(() => {
+    //   liff.closeWindow();
+    // });
   }
 
   render() {    
