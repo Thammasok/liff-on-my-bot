@@ -13,7 +13,7 @@ class Index extends Component {
       pictureUrl : '',
       statusMessage : ''
     };
-
+    
     this.initialize = this.initialize.bind(this);
     this.closeApp = this.closeApp.bind(this);
   }
@@ -36,8 +36,7 @@ class Index extends Component {
       } else {
         liff.sendMessages([{
           type: 'text',
-          // text: "You cannot use this liff."
-          text: "config: " + config.line_user
+          text: "You cannot use this liff."
         }]).then(() => {
           liff.closeWindow();
         });
