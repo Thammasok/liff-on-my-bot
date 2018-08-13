@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import dotenv from 'dotenv'
 
-dotenv.load()
 const liff = window.liff;
 
 class Index extends Component {
@@ -27,7 +25,7 @@ class Index extends Component {
     liff.init(async (data) => {
       let profile = await liff.getProfile();
 
-      if(profile.userId === process.env.USER_LINE_REF) {
+      if(profile.userId === 'Ud6cfdf63ea8a281ab4a9dbd3130f9b5a') {
         this.setState({
           displayName : profile.displayName,
           userId : profile.userId,
