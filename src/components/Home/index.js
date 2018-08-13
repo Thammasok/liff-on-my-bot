@@ -19,6 +19,36 @@ class Index extends Component {
   render() {
     return (
       <div className="container">
+        <div className="field is-grouped is-grouped-multiline">
+          <div className="control">
+            <div className="tags has-addons">
+              <a href="/room?zone=living" className="tag is-light">Living</a>
+              <span className="tag is-success">27 °C</span>
+            </div>
+          </div>
+
+          <div className="control">
+            <div className="tags has-addons">
+              <a href="/room?zone=bedroom" className="tag is-light">Bedroom</a>
+              <span className="tag is-success">24 °C</span>
+            </div>
+          </div>
+
+          <div className="control">
+            <div className="tags has-addons">
+              <a href="/room?zone=bathroom" className="tag is-light">Bathroom</a>
+              <span className="tag is-success">26 °C</span>
+            </div>
+          </div>
+          
+          <div className="control">
+            <div className="tags has-addons">
+              <a href="/room?zone=kitchen" className="tag is-light">Kitchen</a>
+              <span className="tag is-success">27 °C</span>
+            </div>
+          </div>
+        </div>
+        <hr />
         <div className="columns">
           <div className="column is-6">
             <Card

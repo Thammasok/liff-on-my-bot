@@ -8,7 +8,7 @@ class Index extends Component {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand">
-                <span className="navbar-burger burger" data-target="navbarMenu">
+                <span className="navbar-burger burger" data-target="navbarMenu" style={{ marginRight: 'auto', paddingLeft: '50%', paddingRight: '50%' }}>
                   <span></span>
                   <span></span>
                   <span></span>
