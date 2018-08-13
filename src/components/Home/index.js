@@ -19,7 +19,7 @@ class Index extends Component {
   render() {
     return (
       <div className="container">
-        <div className="columns is-mobile">
+        <div className="columns">
           <div className="column is-6">
             <Card
               image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
@@ -29,29 +29,29 @@ class Index extends Component {
           </div>
           <div className="column is-6">
             <Card
-              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
+              image="https://eze-line-bot.herokuapp.com/images/kukkuk-rectangle.png"
               title="My Room"
               desc="IoT and Control console."
             />
           </div>
         </div>
-        <div className="columns is-mobile">
+        <div className="columns">
           <div className="column is-6">
             <Card
-              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
+              image="https://eze-line-bot.herokuapp.com/images/moo-rectangle.png"
               title="Finance"
               desc="Income, expenditure, financial goals and investment."
             />
           </div>
-          <div className="column is-6">
+          <div className="column">
             <Card
-              image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"
+              image="https://eze-line-bot.herokuapp.com/images/bee-rectangle.png"
               title="Todo"
               desc="What to do today?"
             />
           </div>
         </div>
-        <div className="columns is-mobile">
+        <div className="columns">
           <div className="column is-6">
           <Card
             image="https://eze-line-bot.herokuapp.com/images/bear-rectangle.png"

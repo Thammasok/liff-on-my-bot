@@ -8,9 +8,6 @@ class Index extends Component {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand">
-                <a className="navbar-item">
-                  <img src="/img/logo-emoji.png" alt="Logo" />
-                </a>
                 <span className="navbar-burger burger" data-target="navbarMenu">
                   <span></span>
                   <span></span>
