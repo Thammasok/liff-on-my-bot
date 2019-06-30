@@ -1,10 +1,10 @@
 const path = require('path')
 const express = require('express')
-var dotenv = require('dotenv')
+const dotenv = require('dotenv')
 const morgan = require('morgan')
 
 // Load environment variables from .env file
-dotenv.load();
+dotenv.config()
 
 const PORT = process.env.PORT || 3210
 
