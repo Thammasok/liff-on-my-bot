@@ -1,23 +1,11 @@
-import 'whatwg-fetch'
-import React from 'react'
-import ReactDOM from 'react-dom'
-// import localStorage from 'localStorage'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Root from './pages/Root';
+import * as serviceWorker from './serviceWorker';
 
-import registerServiceWorker from './registerServiceWorker'
+ReactDOM.render(<Root />, document.getElementById('root'));
 
-import Root from './components/Root'
-
-import configureStore from './store/configureStore'
-
-const initialState = {
-  messages: {}
-};
-
-const store = configureStore(initialState)
-
-ReactDOM.render(
-  <Root store={store} />,
-  document.getElementById('root')
-);
-
-registerServiceWorker();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
