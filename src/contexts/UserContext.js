@@ -1,4 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
+import Header from './../components/Header'
+import Footer from './../components/Footer'
+import Notification from './../components/Shared/Notifications'
 
 const liff = window.liff;
 
@@ -11,12 +14,6 @@ const UserContextProvider = (props) => {
   const [statusMessage, setStatusMessage] = useState('')
 
   const initialize = () => {
-    // setUserId(1)
-    // setDisplayName('thammasok')
-    // setPictureUrl('12345')
-    // setStatusMessage('it\'s ok')
-
-    // console.log('ok')
     liff.init(async (data) => {
       const profile = await liff.getProfile();
       
@@ -35,7 +32,11 @@ const UserContextProvider = (props) => {
       }
     },
     err => {
-      console.log(err)
+      setUserId(1)
+      setDisplayName('Temp')
+      setPictureUrl('https://random.cat/view/1539')
+      setStatusMessage('it\'s ok')
+      console.log(err.message)
     }); 
   }
 
@@ -45,7 +46,17 @@ const UserContextProvider = (props) => {
 
   return (
     <UserContext.Provider value={{ userId, displayName, pictureUrl, statusMessage }}>
-      {props.children}
+      <section>
+        <Header />
+        
+        <Notification />
+
+        <div style={{margin: '15px'}}>
+          {props.children}
+        </div>
+        <Footer />
+      </section>
+      
     </UserContext.Provider>
   )
 }

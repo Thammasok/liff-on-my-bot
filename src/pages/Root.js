@@ -2,7 +2,10 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import UserContextProvider from './../contexts/UserContext'
+
 import { routes } from './../routes'
+
+import './../assets/sass/main.sass'
 
 function Root() {
 
