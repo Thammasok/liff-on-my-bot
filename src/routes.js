@@ -9,7 +9,6 @@ export const routes = [
 	},
 	{
 		path:'/scan',
-		component: QrCode,
-		exact: true
+		component: QrCode
 	}
 ]
