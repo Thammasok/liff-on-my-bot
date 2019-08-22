@@ -28,10 +28,11 @@ class QrCode extends Component {
     return(
       <div>
         <QrReader
-          delay={this.state.delay}
-          style={previewStyle}
-          onError={this.handleError}
-          onScan={this.handleScan}
+    		facingMode="user"
+			delay={this.state.delay}
+			style={previewStyle}
+			onError={this.handleError}
+			onScan={this.handleScan}
           />
         <p>{this.state.result}</p>
       </div>
