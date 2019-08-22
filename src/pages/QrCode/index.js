@@ -21,7 +21,7 @@ class QrCode extends Component {
   }
   render(){
     const previewStyle = {
-      height: 240,
+      height: 320,
       width: 320,
     }
  
