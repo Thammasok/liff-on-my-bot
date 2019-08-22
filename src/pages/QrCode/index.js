@@ -7,6 +7,7 @@ class QrCode extends Component {
     this.state = {
       delay: 100,
       result: 'No result',
+      error: ''
     }
  
     this.handleScan = this.handleScan.bind(this)
@@ -23,7 +24,10 @@ class QrCode extends Component {
   	}
   }
   handleError(err){
-    console.error(err)
+    // console.error(err)
+    this.setState({
+    	error: err
+    })
   }
   render(){
     const previewStyle = {
@@ -41,6 +45,7 @@ class QrCode extends Component {
 			onScan={this.handleScan}
           />
           <p>{this.state.result}</p>
+          {this.state.error}
       </div>
     )
   }
