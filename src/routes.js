@@ -1,4 +1,5 @@
 import Home from './pages/Home'
+import QrCode from './pages/QrCode'
 
 export const routes = [
 	{
