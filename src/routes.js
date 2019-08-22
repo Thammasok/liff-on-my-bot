@@ -5,5 +5,10 @@ export const routes = [
 		path:'/',
 		component: Home,
 		exact: true
+	},
+	{
+		path:'/scan',
+		component: QrCode,
+		exact: true
 	}
 ]
