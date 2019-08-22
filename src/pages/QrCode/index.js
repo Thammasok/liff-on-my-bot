@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import QrReader from 'react-qr-scanner'
+import QrReader from '@s2b/react-qr-scanner'
  
 class QrCode extends Component {
   constructor(props){
@@ -12,9 +12,15 @@ class QrCode extends Component {
     this.handleScan = this.handleScan.bind(this)
   }
   handleScan(data){
-    this.setState({
-      result: data,
-    })
+  	if(!data.src) {
+  		this.setState({
+	      result: data,
+	    })
+  	} else {
+  		this.setState({
+	      result: 'Scaning...',
+	    })
+  	}
   }
   handleError(err){
     console.error(err)
@@ -24,17 +30,17 @@ class QrCode extends Component {
       height: 320,
       width: 320,
     }
- 
-    return(
+
+    return (
       <div>
-        <QrReader
-    		facingMode="user"
+      	<QrReader
+			facingMode="rear"
 			delay={this.state.delay}
 			style={previewStyle}
 			onError={this.handleError}
 			onScan={this.handleScan}
           />
-        <p>{this.state.result}</p>
+          <p>{this.state.result}</p>
       </div>
     )
   }
