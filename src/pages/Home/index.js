@@ -25,7 +25,7 @@ const Index = () => {
         <meta property="fb:app_id" content="1552358151700561" />
         <meta property="og:url" content="https://eze-liff.herokuapp.com/share/share" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์" />
+        <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์ 1" />
         <meta property="og:description" content="asdasdasdada" />
         <meta property="og:image" content="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" />
         <meta name="twitter:card" content="summary_large_image" />
