@@ -5,7 +5,6 @@ import {
   Mail,
   Sliders
 } from 'react-feather'
-import { Helmet } from 'react-helmet';
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -21,24 +20,8 @@ const Index = () => {
 
   return (
     <div className="container">
-      <Helmet>
-        <meta property="fb:app_id" content="1552358151700561" />
-        <meta property="og:url" content="https://eze-liff.herokuapp.com/share/share" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์ 1" />
-        <meta property="og:description" content="asdasdasdada" />
-        <meta property="og:image" content="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="" data-react-helmet="true" />
-        <meta name="twitter:creator" content="" data-react-helmet="true" />
-        <meta name="twitter:title" content="ฟังเพลง Thailand Top 100 - ชาร์ตเพลงฮิต 2020 | JOOX" />
-        <meta name="twitter:description" content="ฟังเพลงล่าสุดบนชาร์ตเพลง Thailand Top 100 บน JOOX รักได้ป่าว ของ Gavin D" />
-        <meta name="twitter:image" content="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" />
-      </Helmet>
-
       <FacebookShareButton
         url="https://eze-liff.herokuapp.com/share"
-        quote="คอมพิวเตอร์อันยอดเยี่ยม กับ 24 งวดแห่งการผ่อนชําระ"
         hashtag="#worldlifebalance"
       >
         <FacebookIcon size={40} round bgStyle={{ fill: 'black' }} />
@@ -46,7 +29,7 @@ const Index = () => {
 
       <TwitterShareButton
         url="https://eze-liff.herokuapp.com/"
-        title="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        title="คุณเป็นใครกันนะ"
         hashtags={['aday', 'worldlifebalance']}
       >
         <TwitterIcon size={40} round bgStyle={{ fill: 'black' }} />
