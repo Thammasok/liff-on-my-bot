@@ -31,7 +31,7 @@ const Index = () => {
       </Helmet>
 
       <FacebookShareButton
-        url="https://www.google.com"
+        url="https://eze-liff.herokuapp.com/"
         quote="คอมพิวเตอร์อันยอดเยี่ยม กับ 24 งวดแห่งการผ่อนชําระ"
         hashtag="#worldlifebalance"
       >
