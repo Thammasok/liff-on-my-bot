@@ -6,14 +6,18 @@ const Index = () => {
   return (
     <div className="container">
       <Helmet>
-        <meta property="og:url" content="https://eze-liff.herokuapp.com/" />
-        <meta property="fb:app_id" content="1552358151700561" /> 
-        <meta property="og:type" content="website" /> 
-        <meta property="og:title" content="ทดสอบ" />
-        <meta property="og:description" content="ต่อยวัดพลังหมัดคัดเลือกห้องเรียน ติดตามตอนต่อๆไปได้ที่เพจแฟนซับนะครับ" />
-        <meta property="og:image" content="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
-        <meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1579619272436-7bf4271f0bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1547&q=80" />
-        <meta name="twitter:card" content="summary_large_image" />
+      <meta property="fb:app_id" content="1552358151700561" />
+          <meta property="og:url" content="https://eze-line-bot.herokuapp.com/share" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์" />
+          <meta property="og:description" content="asdasdasdada" />
+          <meta property="og:image" content="https://imgcache.joox.com/music/joox/photo_th_th/toplist_300/6/4/afc30e41e9c3e145adcc4dd4cba6e264.jpg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="" data-react-helmet="true" />
+          <meta name="twitter:creator" content="" data-react-helmet="true" />
+          <meta name="twitter:title" content="ฟังเพลง Thailand Top 100 - ชาร์ตเพลงฮิต 2020 | JOOX" />
+          <meta name="twitter:description" content="ฟังเพลงล่าสุดบนชาร์ตเพลง Thailand Top 100 บน JOOX รักได้ป่าว ของ Gavin D" />
+          <meta name="twitter:image" content="https://imgcache.joox.com/music/joox/photo_th_th/toplist_300/6/4/afc30e41e9c3e145adcc4dd4cba6e264.jpg" />
       </Helmet>
 
       <h1>Test</h1>
