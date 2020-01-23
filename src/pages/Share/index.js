@@ -12,6 +12,7 @@ const Index = () => {
         <meta property="og:title" content="ทดสอบ" />
         <meta property="og:description" content="ต่อยวัดพลังหมัดคัดเลือกห้องเรียน ติดตามตอนต่อๆไปได้ที่เพจแฟนซับนะครับ" />
         <meta property="og:image" content="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+        <meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1579619272436-7bf4271f0bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1547&q=80" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
