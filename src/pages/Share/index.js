@@ -7,7 +7,7 @@ const Index = () => {
     <div className="container">
       <Helmet>
         <meta property="fb:app_id" content="1552358151700561" />
-        <meta property="og:url" content="https://eze-line-bot.herokuapp.com/share" />
+        <meta property="og:url" content="https://eze-liff.herokuapp.com/share/share" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์" />
         <meta property="og:description" content="asdasdasdada" />
