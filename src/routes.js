@@ -1,5 +1,6 @@
 import Home from './pages/Home'
 import QrCode from './pages/QrCode'
+import Share from './pages/Share'
 
 export const routes = [
 	{
@@ -10,5 +11,9 @@ export const routes = [
 	{
 		path:'/scan',
 		component: QrCode
+	},
+	{
+		path:'/share',
+		component: Share
 	}
 ]
