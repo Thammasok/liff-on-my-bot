@@ -2,6 +2,8 @@ import React from 'react'
 
 
 const Index = () => {
+  document.getElementsByTagName('meta')[8].content = 'https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+  document.getElementsByTagName('meta')[14].content = 'https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
   return (
     <div className="container">
       <h1>Test</h1>
