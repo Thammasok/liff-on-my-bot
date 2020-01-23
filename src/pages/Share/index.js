@@ -12,7 +12,7 @@ const Index = () => {
         <meta property="og:title" content="คุณเป็นใคร ในโลก (ไร้) บาลานซ์ 2" />
         <meta property="og:description" content="asdasdasdada" />
         <meta property="og:image" content="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="" data-react-helmet="true" />
         <meta name="twitter:creator" content="" data-react-helmet="true" />
         <meta name="twitter:title" content="ฟังเพลง Thailand Top 100 - ชาร์ตเพลงฮิต 2020 | JOOX" />
