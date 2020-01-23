@@ -5,6 +5,13 @@ import {
   Mail,
   Sliders
 } from 'react-feather'
+import { Helmet } from 'react-helmet';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from 'react-share';
 import { UserContext } from './../../contexts/UserContext'
 
 import Card from '../../components/Cards'
@@ -14,6 +21,31 @@ const Index = () => {
 
   return (
     <div className="container">
+      <Helmet>
+        <meta property="og:url" content="https://eze-liff.herokuapp.com/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="ทดสอบ" />
+        <meta property="og:description" content="ต่อยวัดพลังหมัดคัดเลือกห้องเรียน ติดตามตอนต่อๆไปได้ที่เพจแฟนซับนะครับ" />
+        <meta property="og:image" content="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
+      <FacebookShareButton
+        url="https://www.google.com"
+        quote="คอมพิวเตอร์อันยอดเยี่ยม กับ 24 งวดแห่งการผ่อนชําระ"
+        hashtag="#worldlifebalance"
+      >
+        <FacebookIcon size={40} round bgStyle={{ fill: 'black' }} />
+      </FacebookShareButton>
+
+      <TwitterShareButton
+        url="https://eze-liff.herokuapp.com/"
+        title="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        hashtags={['aday', 'worldlifebalance']}
+      >
+        <TwitterIcon size={40} round bgStyle={{ fill: 'black' }} />
+      </TwitterShareButton>
+
       <div className="field is-grouped is-grouped-multiline">
         <div className="control">
           <div className="tags has-addons">
