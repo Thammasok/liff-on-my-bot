@@ -15,6 +15,7 @@ const app = express()
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'))
 
 app.get('/share', function (request, response) {
+  console.log('share page')
   const filePath = path.resolve(__dirname, './build', 'index.html')
 
   // read in the index.html file
