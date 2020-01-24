@@ -25,7 +25,7 @@ app.get('/share', function (request, response) {
     }
 
     // replace the special strings with server generated strings
-    data = data.replace(/\$OG_URL/g, 'https://eze-liff.herokuapp.com/')
+    data = data.replace(/\$OG_URL/g, 'http://www.digitalvillage.me:3210/')
     data = data.replace(/\$OG_TITLE/g, 'How does the Facebook Crawler work?')
     data = data.replace(/\$OG_DESCRIPTION/g, 'You can use the Sharing Debugger to see the information that is used')
     data = data.replace(/\$OG_IMAGE/g, 'https://images.pexels.com/photos/3494913/pexels-photo-3494913.jpeg?cs=srgb&dl=pexels-3494913.jpg&fm=jpg')
