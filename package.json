@@ -29,9 +29,10 @@
     "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "start": "node ./service.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
