@@ -14,7 +14,7 @@ const app = express()
 // Setup logger
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'))
 
-app.get('/', function (request, response) {
+app.get('/share', function (request, response) {
   console.log('Home page visited!')
   const filePath = path.resolve(__dirname, './build', 'index.html')
 
@@ -24,7 +24,6 @@ app.get('/', function (request, response) {
       return console.log(err)
     }
 
-    let result;
     // replace the special strings with server generated strings
     data = data.replace(/\$OG_URL/g, 'https://eze-liff.herokuapp.com/')
     data = data.replace(/\$OG_TITLE/g, 'How does the Facebook Crawler work?')
