@@ -19,8 +19,10 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, '.', 'build')))
 
-// app.get('/share', function (request, response) {
+// app.get('/:character', function (request, response) {
 //   const filePath = path.resolve(__dirname, './build', 'index.html')
+
+//   console.log(request.params.character)
 
 //   // read in the index.html file
 //   fs.readFile(filePath, 'utf8', function (err, data) {
