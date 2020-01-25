@@ -19,31 +19,31 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, '.', 'build')))
 
-app.get('/share', function (request, response) {
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+// app.get('/share', function (request, response) {
+//   const filePath = path.resolve(__dirname, './build', 'index.html')
 
-  // read in the index.html file
-  fs.readFile(filePath, 'utf8', function (err, data) {
-    if (err) {
-      return console.log(err)
-    }
+//   // read in the index.html file
+//   fs.readFile(filePath, 'utf8', function (err, data) {
+//     if (err) {
+//       return console.log(err)
+//     }
 
-    // replace the special strings with server generated strings
-    data = data.replace(/\__OG_URL__/g, 'https://eze-liff.herokuapp.com/share')
-    data = data.replace(/\__OG_TITLE__/g, 'How does the Facebook Crawler work?')
-    data = data.replace(/\__OG_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
-    data = data.replace(/\__OG_IMAGE__/g, 'https://images.pexels.com/photos/3494913/pexels-photo-3494913.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
-    data = data.replace(/\__TWITTER_TITLE__/g, 'How does the Facebook Crawler work?')
-    data = data.replace(/\__TWITTER_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
-    result = data.replace(/\__TWITTER_IMAGE__/g, 'https://images.pexels.com/photos/3494913/pexels-photo-3494913.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
+//     // replace the special strings with server generated strings
+//     data = data.replace(/\__OG_URL__/g, 'https://eze-liff.herokuapp.com/share')
+//     data = data.replace(/\__OG_TITLE__/g, 'How does the Facebook Crawler work?')
+//     data = data.replace(/\__OG_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
+//     data = data.replace(/\__OG_IMAGE__/g, 'https://images.pexels.com/photos/3494913/pexels-photo-3494913.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
+//     data = data.replace(/\__TWITTER_TITLE__/g, 'How does the Facebook Crawler work?')
+//     data = data.replace(/\__TWITTER_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
+//     result = data.replace(/\__TWITTER_IMAGE__/g, 'https://images.pexels.com/photos/3494913/pexels-photo-3494913.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
     
-    console.log('----------- share page ----------- ')
-    console.log(result)
-    console.log('----------- share page ----------- ')
+//     console.log('----------- share page ----------- ')
+//     console.log(result)
+//     console.log('----------- share page ----------- ')
   
-    response.send(result)
-  })
-})
+//     response.send(result)
+//   })
+// })
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
