@@ -3,6 +3,7 @@ const express = require('express')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const fs = require('fs')
+const prerender = require('prerender-node')
 
 // Load environment variables from .env file
 dotenv.config()
@@ -11,6 +12,9 @@ const PORT = process.env.PORT || 3210
 
 const app = express()
 
+console.log('ok')
+app.use(prerender)
+console.log('ok2')
 // Setup logger
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'))
 
