@@ -14,6 +14,9 @@ const app = express()
 // Setup logger
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'))
 
+// Serve static assets
+app.use(express.static(path.resolve(__dirname, '.', 'build')))
+
 app.get('/share', function (request, response) {
   console.log('share page')
   const filePath = path.resolve(__dirname, './build', 'index.html')
@@ -32,13 +35,10 @@ app.get('/share', function (request, response) {
     data = data.replace(/\__TWITTER_TITLE__/g, 'How does the Facebook Crawler work?')
     data = data.replace(/\__TWITTER_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
     result = data.replace(/\__TWITTER_IMAGE__/g, 'https://images.pexels.com/photos/3341605/pexels-photo-3341605.jpeg?cs=srgb&dl=pexels-3341605.jpg&fm=jpg')
-
+    console.log(result)
     response.send(result)
   })
 })
-
-// Serve static assets
-app.use(express.static(path.resolve(__dirname, '.', 'build')))
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
