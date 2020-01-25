@@ -15,11 +15,11 @@ const Index = () => {
       <Helmet>
         <meta property="og:url" content="https://eze-liff.herokuapp.com/share" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="ชีวิตคือการเดินทาง 2" />
+        <meta property="og:title" content="ชีวิตคือการเดินทาง 3" />
         <meta property="og:description" content="อุปสรรคคือสิ่งที่ต้องพบเจอ ทำมานานแล้วยังไม่ได้สักทั" />
         <meta property="og:image" content="https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
        
-        <meta name="twitter:title" content="ชีวิตคือการเดินทาง 2" />
+        <meta name="twitter:title" content="ชีวิตคือการเดินทาง 3" />
         <meta name="twitter:description" content="อุปสรรคคือสิ่งที่ต้องพบเจอ ทำมานานแล้วยังไม่ได้สักทั" />
         <meta name="twitter:image" content="https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
       </Helmet>
