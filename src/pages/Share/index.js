@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="container">
       <Helmet>
-        <meta property="og:url" content="https://eze-liff.herokuapp.com/share" />
+        <meta property="og:url" content="http://www.digitalvillage.me:3210/share" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="ชีวิตคือการเดินทาง 3" />
         <meta property="og:description" content="อุปสรรคคือสิ่งที่ต้องพบเจอ ทำมานานแล้วยังไม่ได้สักทั" />
