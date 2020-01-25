@@ -29,7 +29,7 @@ const Index = () => {
       </FacebookShareButton>
 
       <TwitterShareButton
-        url="https://eze-liff.herokuapp.com/"
+        url="https://eze-liff.herokuapp.com/share"
         title="คุณเป็นใครกันนะ"
         hashtags={['aday', 'worldlifebalance']}
       >

@@ -25,7 +25,7 @@ const Index = () => {
       </Helmet>
       <h1>Test</h1>
       <div>
-        <img src="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" alt="text" />
+        <img src="https://images.pexels.com/photos/3527542/pexels-photo-3527542.jpeg?cs=srgb&dl=pexels-3527542.jpg&fm=jpg" width="30%" alt="text" />
       </div>
     </div>
   )
