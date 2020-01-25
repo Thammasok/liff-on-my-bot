@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 3210
 
 const app = express()
 
-console.log('ok')
 app.use(prerender)
-console.log('ok2')
 // Setup logger
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'))
 
@@ -22,7 +20,6 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 app.use(express.static(path.resolve(__dirname, '.', 'build')))
 
 app.get('/share', function (request, response) {
-  console.log('share page')
   const filePath = path.resolve(__dirname, './build', 'index.html')
 
   // read in the index.html file
@@ -39,7 +36,11 @@ app.get('/share', function (request, response) {
     data = data.replace(/\__TWITTER_TITLE__/g, 'How does the Facebook Crawler work?')
     data = data.replace(/\__TWITTER_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
     result = data.replace(/\__TWITTER_IMAGE__/g, 'https://images.pexels.com/photos/3341605/pexels-photo-3341605.jpeg?cs=srgb&dl=pexels-3341605.jpg&fm=jpg')
-
+    
+    console.log('----------- share page ----------- ')
+    console.log(result)
+    console.log('----------- share page ----------- ')
+  
     response.send(result)
   })
 })
