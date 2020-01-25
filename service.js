@@ -35,7 +35,7 @@ app.get('/share', function (request, response) {
     data = data.replace(/\__TWITTER_TITLE__/g, 'How does the Facebook Crawler work?')
     data = data.replace(/\__TWITTER_DESCRIPTION__/g, 'You can use the Sharing Debugger to see the information that is used')
     result = data.replace(/\__TWITTER_IMAGE__/g, 'https://images.pexels.com/photos/3341605/pexels-photo-3341605.jpeg?cs=srgb&dl=pexels-3341605.jpg&fm=jpg')
-    console.log(result)
+
     response.send(result)
   })
 })
