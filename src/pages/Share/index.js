@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet-async'
 // link เฉพาะ character เลย
 const Index = () => {
   document.getElementsByTagName('meta')[4].content = 'https://eze-liff.herokuapp.com/share'
-  document.getElementsByTagName('meta')[6].content = 'ชีวิตคือการเดินทาง 4'
+  document.getElementsByTagName('meta')[6].content = 'ชีวิตคือการเดินทาง 5'
   document.getElementsByTagName('meta')[7].content = 'อุปสรรคคือสิ่งที่ต้องพบเจอ อุปสรรคคือสิ่งที่ต้องพบเจอ'
-  document.getElementsByTagName('meta')[8].content = 'https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
-  document.getElementsByTagName('meta')[12].content = 'ชีวิตคือการเดินทาง 4'
+  document.getElementsByTagName('meta')[8].content = 'https://images.unsplash.com/photo-1579887829663-67706e62e6ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+  document.getElementsByTagName('meta')[12].content = 'ชีวิตคือการเดินทาง 5'
   document.getElementsByTagName('meta')[13].content = 'อุปสรรคคือสิ่งที่ต้องพบเจอ อุปสรรคคือสิ่งที่ต้องพบเจอ'
-  document.getElementsByTagName('meta')[14].content = 'https://images.unsplash.com/photo-1579653125967-df28fcdc2eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+  document.getElementsByTagName('meta')[14].content = 'https://images.unsplash.com/photo-1579892239884-1c18a8e3b938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
   return (
     <div className="container">
       {/* <Helmet>
